@@ -30,8 +30,8 @@ $scope.vote = function(val){
   })
 
 mySocket.on("update",function(res){
-  $scope.votes.data[0].y = res;
-})
+        $scope.votes.data[0].y = res;
+    })
   //Do not focus on this part. Its just to set up the charts
   //https://github.com/chinmaymk/angular-charts/
   $scope.config = {
